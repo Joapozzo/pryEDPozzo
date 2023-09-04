@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace pryEDPozzo
 {
-    public partial class frmCola : Form
+    public partial class frmPila : Form
     {
-        public frmCola()
+        public frmPila()
         {
             InitializeComponent();
         }
 
-        clsCola FilaDePersona = new clsCola();
+        clsPila FilaDePersona = new clsPila();
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
@@ -26,8 +26,8 @@ namespace pryEDPozzo
             ObjNodo.Nombre = txtNombre.Text;
             ObjNodo.Tramite = txtTramite.Text;
             FilaDePersona.Agregar(ObjNodo);
-            FilaDePersona.Recorrer(dgvCola);
-            FilaDePersona.Recorrer(lstCola);
+            FilaDePersona.Recorrer(dgvPila);
+            FilaDePersona.Recorrer(lstPila);
             FilaDePersona.Recorrer();
             txtCodigo.Text = "";
             txtNombre.Text = "";
@@ -42,16 +42,22 @@ namespace pryEDPozzo
                 lblNombreEliminar.Text = FilaDePersona.Primero.Nombre;
                 lblTramiteEliminar.Text = FilaDePersona.Primero.Tramite;
                 FilaDePersona.Eliminar();
-                FilaDePersona.Recorrer(dgvCola);
-                FilaDePersona.Recorrer(lstCola);
+                FilaDePersona.Recorrer(dgvPila);
+                FilaDePersona.Recorrer(lstPila);
                 FilaDePersona.Recorrer();
             }
             else
             {
                 lblCodigoEliminar.Text = "";
                 lblNombreEliminar.Text = "";
-                lblTramiteEliminar.Text = "";
+                lblTramiteEliminar.Text = ""
+                ;
             }
+        }
+
+        private void frmPila_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

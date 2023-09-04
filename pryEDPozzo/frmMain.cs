@@ -22,5 +22,17 @@ namespace pryEDPozzo
             frmCola vCola = new frmCola();
             vCola.ShowDialog();
         }
+
+        private void pilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPila vPila = new frmPila();
+            vPila.ShowDialog();
+        }
+
+        private void datosDelDesarrolladorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDatosDesarrolador vDatos = new frmDatosDesarrolador();
+            vDatos.ShowDialog();
+        }
     }
 }
