@@ -34,5 +34,17 @@ namespace pryEDPozzo
             frmDatosDesarrolador vDatos = new frmDatosDesarrolador();
             vDatos.ShowDialog();
         }
+
+        private void listaDobleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListaSimple vListaSimple = new frmListaSimple();
+            vListaSimple.ShowDialog();
+        }
+
+        private void listaDobleToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmListaDoble vListaDoble = new frmListaDoble();
+            vListaDoble.ShowDialog();
+        }
     }
 }

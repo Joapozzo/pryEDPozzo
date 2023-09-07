@@ -63,6 +63,16 @@ namespace pryEDPozzo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _01_ListasSimplementeEnlazadas {
+            get {
+                object obj = ResourceManager.GetObject("01 ListasSimplementeEnlazadas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1200px_Pila_svg {
             get {
                 object obj = ResourceManager.GetObject("1200px-Pila.svg", resourceCulture);
@@ -106,6 +116,16 @@ namespace pryEDPozzo.Properties {
         internal static System.Drawing.Bitmap FvJ3zCpWwAU1B8E {
             get {
                 object obj = ResourceManager.GetObject("FvJ3zCpWwAU1B8E", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lenlaz2 {
+            get {
+                object obj = ResourceManager.GetObject("lenlaz2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

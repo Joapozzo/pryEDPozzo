@@ -79,11 +79,10 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dgvPila.Location = new System.Drawing.Point(325, 362);
-            this.dgvPila.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvPila.Location = new System.Drawing.Point(244, 294);
             this.dgvPila.Name = "dgvPila";
             this.dgvPila.RowHeadersWidth = 51;
-            this.dgvPila.Size = new System.Drawing.Size(632, 293);
+            this.dgvPila.Size = new System.Drawing.Size(474, 238);
             this.dgvPila.TabIndex = 4;
             // 
             // Column3
@@ -96,21 +95,17 @@
             // lstPila
             // 
             this.lstPila.FormattingEnabled = true;
-            this.lstPila.ItemHeight = 16;
-            this.lstPila.Location = new System.Drawing.Point(23, 36);
-            this.lstPila.Margin = new System.Windows.Forms.Padding(4);
+            this.lstPila.Location = new System.Drawing.Point(17, 29);
             this.lstPila.Name = "lstPila";
-            this.lstPila.Size = new System.Drawing.Size(253, 292);
+            this.lstPila.Size = new System.Drawing.Size(191, 238);
             this.lstPila.TabIndex = 0;
             // 
             // mrcListado
             // 
             this.mrcListado.Controls.Add(this.lstPila);
-            this.mrcListado.Location = new System.Drawing.Point(13, 327);
-            this.mrcListado.Margin = new System.Windows.Forms.Padding(4);
+            this.mrcListado.Location = new System.Drawing.Point(10, 266);
             this.mrcListado.Name = "mrcListado";
-            this.mrcListado.Padding = new System.Windows.Forms.Padding(4);
-            this.mrcListado.Size = new System.Drawing.Size(969, 361);
+            this.mrcListado.Size = new System.Drawing.Size(727, 293);
             this.mrcListado.TabIndex = 6;
             this.mrcListado.TabStop = false;
             this.mrcListado.Text = "Listado en una Lista y una Grilla";
@@ -118,54 +113,48 @@
             // lblTramiteEliminar
             // 
             this.lblTramiteEliminar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblTramiteEliminar.Location = new System.Drawing.Point(120, 140);
-            this.lblTramiteEliminar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTramiteEliminar.Location = new System.Drawing.Point(90, 114);
             this.lblTramiteEliminar.Name = "lblTramiteEliminar";
-            this.lblTramiteEliminar.Size = new System.Drawing.Size(167, 25);
+            this.lblTramiteEliminar.Size = new System.Drawing.Size(125, 20);
             this.lblTramiteEliminar.TabIndex = 16;
             // 
             // lblNombreEliminar
             // 
             this.lblNombreEliminar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblNombreEliminar.Location = new System.Drawing.Point(120, 97);
-            this.lblNombreEliminar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNombreEliminar.Location = new System.Drawing.Point(90, 79);
             this.lblNombreEliminar.Name = "lblNombreEliminar";
-            this.lblNombreEliminar.Size = new System.Drawing.Size(167, 25);
+            this.lblNombreEliminar.Size = new System.Drawing.Size(125, 20);
             this.lblNombreEliminar.TabIndex = 15;
             // 
             // lblCodigoEliminar
             // 
             this.lblCodigoEliminar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCodigoEliminar.Location = new System.Drawing.Point(172, 53);
-            this.lblCodigoEliminar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCodigoEliminar.Location = new System.Drawing.Point(129, 43);
             this.lblCodigoEliminar.Name = "lblCodigoEliminar";
-            this.lblCodigoEliminar.Size = new System.Drawing.Size(115, 25);
+            this.lblCodigoEliminar.Size = new System.Drawing.Size(86, 20);
             this.lblCodigoEliminar.TabIndex = 14;
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(168, 53);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCodigo.Location = new System.Drawing.Point(126, 43);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(113, 22);
+            this.txtCodigo.Size = new System.Drawing.Size(86, 20);
             this.txtCodigo.TabIndex = 1;
             // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(28, 59);
-            this.lblCodigo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCodigo.Location = new System.Drawing.Point(21, 48);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(51, 16);
+            this.lblCodigo.Size = new System.Drawing.Size(40, 13);
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Codigo";
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(36, 215);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminar.Location = new System.Drawing.Point(27, 175);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(251, 39);
+            this.btnEliminar.Size = new System.Drawing.Size(188, 32);
             this.btnEliminar.TabIndex = 13;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -174,39 +163,35 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 103);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(23, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 16);
+            this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 9;
             this.label2.Text = "Nombre";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(31, 59);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(23, 48);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 16);
+            this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "Codigo";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 146);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(24, 119);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 16);
+            this.label1.Size = new System.Drawing.Size(42, 13);
             this.label1.TabIndex = 11;
             this.label1.Text = "Tramite";
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(33, 215);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAgregar.Location = new System.Drawing.Point(25, 175);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(251, 39);
+            this.btnAgregar.Size = new System.Drawing.Size(188, 32);
             this.btnAgregar.TabIndex = 6;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -214,37 +199,33 @@
             // 
             // txtTramite
             // 
-            this.txtTramite.Location = new System.Drawing.Point(117, 140);
-            this.txtTramite.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTramite.Location = new System.Drawing.Point(88, 114);
             this.txtTramite.Name = "txtTramite";
-            this.txtTramite.Size = new System.Drawing.Size(165, 22);
+            this.txtTramite.Size = new System.Drawing.Size(125, 20);
             this.txtTramite.TabIndex = 5;
             // 
             // lblTrámite
             // 
             this.lblTrámite.AutoSize = true;
-            this.lblTrámite.Location = new System.Drawing.Point(29, 146);
-            this.lblTrámite.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTrámite.Location = new System.Drawing.Point(22, 119);
             this.lblTrámite.Name = "lblTrámite";
-            this.lblTrámite.Size = new System.Drawing.Size(53, 16);
+            this.lblTrámite.Size = new System.Drawing.Size(42, 13);
             this.lblTrámite.TabIndex = 4;
             this.lblTrámite.Text = "Tramite";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(117, 97);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombre.Location = new System.Drawing.Point(88, 79);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(164, 22);
+            this.txtNombre.Size = new System.Drawing.Size(124, 20);
             this.txtNombre.TabIndex = 3;
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(28, 103);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNombre.Location = new System.Drawing.Point(21, 84);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(56, 16);
+            this.lblNombre.Size = new System.Drawing.Size(44, 13);
             this.lblNombre.TabIndex = 2;
             this.lblNombre.Text = "Nombre";
             // 
@@ -257,11 +238,9 @@
             this.mrcEliminar.Controls.Add(this.label2);
             this.mrcEliminar.Controls.Add(this.label3);
             this.mrcEliminar.Controls.Add(this.label1);
-            this.mrcEliminar.Location = new System.Drawing.Point(670, 13);
-            this.mrcEliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.mrcEliminar.Location = new System.Drawing.Point(502, 11);
             this.mrcEliminar.Name = "mrcEliminar";
-            this.mrcEliminar.Padding = new System.Windows.Forms.Padding(4);
-            this.mrcEliminar.Size = new System.Drawing.Size(312, 284);
+            this.mrcEliminar.Size = new System.Drawing.Size(234, 231);
             this.mrcEliminar.TabIndex = 7;
             this.mrcEliminar.TabStop = false;
             this.mrcEliminar.Text = "Elemento Eliminado";
@@ -275,11 +254,9 @@
             this.mrcNuevoElemento.Controls.Add(this.lblNombre);
             this.mrcNuevoElemento.Controls.Add(this.txtCodigo);
             this.mrcNuevoElemento.Controls.Add(this.lblCodigo);
-            this.mrcNuevoElemento.Location = new System.Drawing.Point(325, 13);
-            this.mrcNuevoElemento.Margin = new System.Windows.Forms.Padding(4);
+            this.mrcNuevoElemento.Location = new System.Drawing.Point(244, 11);
             this.mrcNuevoElemento.Name = "mrcNuevoElemento";
-            this.mrcNuevoElemento.Padding = new System.Windows.Forms.Padding(4);
-            this.mrcNuevoElemento.Size = new System.Drawing.Size(312, 284);
+            this.mrcNuevoElemento.Size = new System.Drawing.Size(234, 231);
             this.mrcNuevoElemento.TabIndex = 5;
             this.mrcNuevoElemento.TabStop = false;
             this.mrcNuevoElemento.Text = "Nuevo Elemento";
@@ -289,24 +266,24 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = global::pryEDPozzo.Properties.Resources._1200px_Pila_svg;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 11);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(277, 284);
+            this.pictureBox1.Size = new System.Drawing.Size(208, 231);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
             // frmPila
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(999, 705);
+            this.ClientSize = new System.Drawing.Size(749, 573);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvPila);
             this.Controls.Add(this.mrcListado);
             this.Controls.Add(this.mrcEliminar);
             this.Controls.Add(this.mrcNuevoElemento);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmPila";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura de datos no lineales - Pila";
