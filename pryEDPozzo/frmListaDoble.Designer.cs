@@ -50,17 +50,17 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.mrcEliminar = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mrcListarDatos = new System.Windows.Forms.GroupBox();
-            this.optAscendente = new System.Windows.Forms.RadioButton();
             this.optDescendente = new System.Windows.Forms.RadioButton();
+            this.optAscendente = new System.Windows.Forms.RadioButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mrcNuevoElemento.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaDoble)).BeginInit();
             this.mrcListado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaSimple)).BeginInit();
             this.mrcEliminar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.mrcListarDatos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // mrcNuevoElemento
@@ -81,17 +81,16 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Enabled = false;
             this.btnAgregar.Location = new System.Drawing.Point(25, 175);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(188, 32);
             this.btnAgregar.TabIndex = 6;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // txtTramite
             // 
-            this.txtTramite.Enabled = false;
             this.txtTramite.Location = new System.Drawing.Point(88, 114);
             this.txtTramite.Name = "txtTramite";
             this.txtTramite.Size = new System.Drawing.Size(125, 20);
@@ -108,7 +107,6 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Enabled = false;
             this.txtNombre.Location = new System.Drawing.Point(88, 79);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(124, 20);
@@ -238,9 +236,9 @@
             // btnEliminar
             // 
             this.btnEliminar.Enabled = false;
-            this.btnEliminar.Location = new System.Drawing.Point(16, 175);
+            this.btnEliminar.Location = new System.Drawing.Point(13, 89);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(200, 32);
+            this.btnEliminar.Size = new System.Drawing.Size(190, 32);
             this.btnEliminar.TabIndex = 13;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -267,28 +265,27 @@
             this.mrcEliminar.TabStop = false;
             this.mrcEliminar.Text = "Elemento Eliminado";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::pryEDPozzo.Properties.Resources.lenlaz2;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(208, 231);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            // 
             // mrcListarDatos
             // 
             this.mrcListarDatos.Controls.Add(this.optDescendente);
             this.mrcListarDatos.Controls.Add(this.optAscendente);
-            this.mrcListarDatos.Location = new System.Drawing.Point(16, 94);
+            this.mrcListarDatos.Location = new System.Drawing.Point(16, 132);
             this.mrcListarDatos.Name = "mrcListarDatos";
-            this.mrcListarDatos.Size = new System.Drawing.Size(200, 75);
+            this.mrcListarDatos.Size = new System.Drawing.Size(187, 75);
             this.mrcListarDatos.TabIndex = 15;
             this.mrcListarDatos.TabStop = false;
             this.mrcListarDatos.Text = "Listar Datos";
+            // 
+            // optDescendente
+            // 
+            this.optDescendente.AutoSize = true;
+            this.optDescendente.Location = new System.Drawing.Point(12, 43);
+            this.optDescendente.Name = "optDescendente";
+            this.optDescendente.Size = new System.Drawing.Size(89, 17);
+            this.optDescendente.TabIndex = 1;
+            this.optDescendente.TabStop = true;
+            this.optDescendente.Text = "Descendente";
+            this.optDescendente.UseVisualStyleBackColor = true;
             // 
             // optAscendente
             // 
@@ -301,16 +298,17 @@
             this.optAscendente.Text = "Ascendente";
             this.optAscendente.UseVisualStyleBackColor = true;
             // 
-            // optDescendente
+            // pictureBox1
             // 
-            this.optDescendente.AutoSize = true;
-            this.optDescendente.Location = new System.Drawing.Point(12, 43);
-            this.optDescendente.Name = "optDescendente";
-            this.optDescendente.Size = new System.Drawing.Size(89, 17);
-            this.optDescendente.TabIndex = 1;
-            this.optDescendente.TabStop = true;
-            this.optDescendente.Text = "Descendente";
-            this.optDescendente.UseVisualStyleBackColor = true;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = global::pryEDPozzo.Properties.Resources.lenlaz2;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(208, 231);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
             // 
             // frmListaDoble
             // 
@@ -331,9 +329,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaSimple)).EndInit();
             this.mrcEliminar.ResumeLayout(false);
             this.mrcEliminar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.mrcListarDatos.ResumeLayout(false);
             this.mrcListarDatos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -11,18 +11,38 @@ namespace pryEDPozzo
         private Int32 cod;
         private String nom;
         private String tra;
+
         private clsNodo sig;
+        private clsNodo ant;
 
         public Int32 Codigo
-        { get { return cod; } set { cod = value; } }
+        { 
+            get { return cod; } 
+            set { cod = value; } 
+        }
 
         public String Nombre
-        { get { return nom; } set { nom = value; } }
+        { 
+            get { return nom; } 
+            set { nom = value; } 
+        }
 
         public string Tramite
-        { get { return tra; } set { tra = value; } }
+        { 
+            get { return tra; } 
+            set { tra = value; } 
+        }
 
         public clsNodo Siguiente
-        { get { return sig; } set { sig = value; } }
+        { 
+            get { return sig; } 
+            set { sig = value; } 
+        }
+
+        public clsNodo Anterior
+        { 
+            get { return ant; } 
+            set { sig = value; } 
+        }
     }
 }

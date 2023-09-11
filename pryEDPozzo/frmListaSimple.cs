@@ -110,5 +110,10 @@ namespace pryEDPozzo
                 btnEliminar.Enabled = false;
             }
         }
+
+        private void frmListaSimple_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
