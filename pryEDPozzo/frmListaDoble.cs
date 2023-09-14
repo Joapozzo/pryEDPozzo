@@ -17,7 +17,7 @@ namespace pryEDPozzo
             InitializeComponent();
         }
 
-        clsListaSimple FilaDePersona = new clsListaSimple();
+        clsListaDoble FilaDePersona = new clsListaDoble();
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
@@ -33,6 +33,42 @@ namespace pryEDPozzo
             txtCodigo.Text = "";
             txtNombre.Text = "";
             txtTramite.Text = "";
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (FilaDePersona.Primero != null)
+            {
+                Int32 x = Convert.ToInt32(cmbCodigo.Text);
+                FilaDePersona.Eliminar(x);
+                FilaDePersona.Recorrer(dgvListaDoble);
+                FilaDePersona.Recorrer(lstListaDoble);
+                FilaDePersona.Recorrer(cmbCodigo);
+                FilaDePersona.Recorrer();
+            }
+            else
+            {
+                MessageBox.Show("No hay elementos en la lista, capo");
+            }
+        }
+
+        private void frmListaDoble_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void optAscendente_CheckedChanged(object sender, EventArgs e)
+        {
+            FilaDePersona.Recorrer(dgvListaDoble);
+            FilaDePersona.Recorrer(lstListaDoble);
+            FilaDePersona.Recorrer(cmbCodigo);
+
+        }
+
+        private void optDescendente_CheckedChanged(object sender, EventArgs e)
+        {
+            FilaDePersona.RecorrerDes(dgvListaDoble);
+            FilaDePersona.RecorrerDes(lstListaDoble);
+            FilaDePersona.RecorrerDes(cmbCodigo);
         }
     }
 }

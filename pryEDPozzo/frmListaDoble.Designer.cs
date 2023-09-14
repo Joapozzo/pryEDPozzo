@@ -235,13 +235,13 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Enabled = false;
             this.btnEliminar.Location = new System.Drawing.Point(13, 89);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(190, 32);
             this.btnEliminar.TabIndex = 13;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // label3
             // 
@@ -286,6 +286,7 @@
             this.optDescendente.TabStop = true;
             this.optDescendente.Text = "Descendente";
             this.optDescendente.UseVisualStyleBackColor = true;
+            this.optDescendente.CheckedChanged += new System.EventHandler(this.optDescendente_CheckedChanged);
             // 
             // optAscendente
             // 
@@ -297,6 +298,7 @@
             this.optAscendente.TabStop = true;
             this.optAscendente.Text = "Ascendente";
             this.optAscendente.UseVisualStyleBackColor = true;
+            this.optAscendente.CheckedChanged += new System.EventHandler(this.optAscendente_CheckedChanged);
             // 
             // pictureBox1
             // 
@@ -321,7 +323,9 @@
             this.Controls.Add(this.mrcEliminar);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmListaDoble";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lista Doble";
+            this.Load += new System.EventHandler(this.frmListaDoble_Load);
             this.mrcNuevoElemento.ResumeLayout(false);
             this.mrcNuevoElemento.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaDoble)).EndInit();

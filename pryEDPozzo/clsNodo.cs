@@ -42,7 +42,7 @@ namespace pryEDPozzo
         public clsNodo Anterior
         { 
             get { return ant; } 
-            set { sig = value; } 
+            set { ant = value; } 
         }
     }
 }

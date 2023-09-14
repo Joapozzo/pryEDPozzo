@@ -46,5 +46,11 @@ namespace pryEDPozzo
             frmListaDoble vListaDoble = new frmListaDoble();
             vListaDoble.ShowDialog();
         }
+
+        private void arbolBinarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmArbolBinario vArbol = new frmArbolBinario();
+            vArbol.ShowDialog();
+        }
     }
 }
