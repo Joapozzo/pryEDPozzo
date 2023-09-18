@@ -8,6 +8,7 @@ namespace pryEDPozzo
 {
     internal class clsNodo
     {
+        //Propiedades
         private Int32 cod;
         private String nom;
         private String tra;
@@ -43,6 +44,18 @@ namespace pryEDPozzo
         { 
             get { return ant; } 
             set { ant = value; } 
+        }
+
+        public clsNodo Izquierda
+        {
+            get { return ant; }
+            set { ant = value; }
+        }
+
+        public clsNodo Derecha 
+        {
+            get { return sig; }
+            set { sig = value; }
         }
     }
 }
