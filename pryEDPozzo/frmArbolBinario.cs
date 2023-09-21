@@ -25,11 +25,29 @@ namespace pryEDPozzo
             ObjNodo.Nombre = txtNombre.Text;
             ObjNodo.Tramite = txtTramite.Text;
             FilaDePersona.Agregar(ObjNodo);
-            FilaDePersona.Recorrer(dgvArbol);
+            FilaDePersona.RecorrerInOrden(dgvArbol);
             //FilaDePersona.Recorrer();
             txtCodigo.Text = "";
             txtNombre.Text = "";
             txtTramite.Text = "";
+        }
+
+        private void optInOrden_CheckedChanged(object sender, EventArgs e)
+        {
+            clsNodo ObjNodo = new clsNodo();
+            FilaDePersona.RecorrerInOrden(dgvArbol);
+        }
+
+        private void optPreOrden_CheckedChanged(object sender, EventArgs e)
+        {
+            clsNodo ObjNodo = new clsNodo();
+            FilaDePersona.RecorrerPreOrden(dgvArbol);
+        }
+
+        private void optPostOrden_CheckedChanged(object sender, EventArgs e)
+        {
+            clsNodo ObjNodo = new clsNodo();
+            FilaDePersona.RecorrerPostOrden(dgvArbol);
         }
     }
 }

@@ -50,7 +50,7 @@ namespace pryEDPozzo
             }
         }
 
-        public void Recorrer(DataGridView Grilla)
+        public void RecorrerInOrden(DataGridView Grilla)
         {
             Grilla.Rows.Clear();
             InOrdenAsc(Grilla, Raiz);
@@ -61,6 +61,32 @@ namespace pryEDPozzo
             if (R.Izquierda != null) InOrdenAsc(Dgv, R.Izquierda);
             Dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
             if (R.Derecha != null) InOrdenAsc(Dgv, R.Derecha);
+        }
+
+        public void RecorrerPreOrden(DataGridView Grilla)
+        {
+            Grilla.Rows.Clear();
+            PreOrden(Grilla, Raiz);
+        }
+
+        private void PreOrden(DataGridView Dgv, clsNodo R)
+        {
+            Dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
+            if (R.Izquierda != null) InOrdenAsc(Dgv, R.Izquierda);
+            if (R.Derecha != null) InOrdenAsc(Dgv, R.Derecha);
+        }
+
+        public void RecorrerPostOrden(DataGridView Grilla)
+        {
+            Grilla.Rows.Clear();
+            PostOrden(Grilla, Raiz);
+        }
+
+        private void PostOrden(DataGridView Dgv, clsNodo R)
+        {
+            if (R.Izquierda != null) InOrdenAsc(Dgv, R.Izquierda);
+            if (R.Derecha != null) InOrdenAsc(Dgv, R.Derecha);
+            Dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
         }
 
     }

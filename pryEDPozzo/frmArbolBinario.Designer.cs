@@ -53,6 +53,7 @@
             this.lblCodigo = new System.Windows.Forms.Label();
             this.mrcNuevoElemento = new System.Windows.Forms.GroupBox();
             this.tvArbol = new System.Windows.Forms.TreeView();
+            this.btnExportar = new System.Windows.Forms.Button();
             this.mrcEliminar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArbol)).BeginInit();
             this.mrcListado.SuspendLayout();
@@ -135,6 +136,7 @@
             // 
             // mrcListado
             // 
+            this.mrcListado.Controls.Add(this.btnExportar);
             this.mrcListado.Controls.Add(this.optPostOrden);
             this.mrcListado.Controls.Add(this.optPreOrden);
             this.mrcListado.Controls.Add(this.optInOrden);
@@ -156,6 +158,7 @@
             this.optPostOrden.TabStop = true;
             this.optPostOrden.Text = "Post-Orden";
             this.optPostOrden.UseVisualStyleBackColor = true;
+            this.optPostOrden.CheckedChanged += new System.EventHandler(this.optPostOrden_CheckedChanged);
             // 
             // optPreOrden
             // 
@@ -167,6 +170,7 @@
             this.optPreOrden.TabStop = true;
             this.optPreOrden.Text = "Pre-Orden";
             this.optPreOrden.UseVisualStyleBackColor = true;
+            this.optPreOrden.CheckedChanged += new System.EventHandler(this.optPreOrden_CheckedChanged);
             // 
             // optInOrden
             // 
@@ -178,6 +182,7 @@
             this.optInOrden.TabStop = true;
             this.optInOrden.Text = "In-Orden";
             this.optInOrden.UseVisualStyleBackColor = true;
+            this.optInOrden.CheckedChanged += new System.EventHandler(this.optInOrden_CheckedChanged);
             // 
             // Column3
             // 
@@ -294,6 +299,15 @@
             this.tvArbol.Size = new System.Drawing.Size(209, 229);
             this.tvArbol.TabIndex = 23;
             // 
+            // btnExportar
+            // 
+            this.btnExportar.Location = new System.Drawing.Point(25, 245);
+            this.btnExportar.Name = "btnExportar";
+            this.btnExportar.Size = new System.Drawing.Size(100, 22);
+            this.btnExportar.TabIndex = 7;
+            this.btnExportar.Text = "Exportar";
+            this.btnExportar.UseVisualStyleBackColor = true;
+            // 
             // frmArbolBinario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -346,5 +360,6 @@
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.GroupBox mrcNuevoElemento;
         private System.Windows.Forms.TreeView tvArbol;
+        private System.Windows.Forms.Button btnExportar;
     }
 }
