@@ -37,6 +37,7 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mrcListado = new System.Windows.Forms.GroupBox();
+            this.btnExportar = new System.Windows.Forms.Button();
             this.optPostOrden = new System.Windows.Forms.RadioButton();
             this.optPreOrden = new System.Windows.Forms.RadioButton();
             this.optInOrden = new System.Windows.Forms.RadioButton();
@@ -53,7 +54,7 @@
             this.lblCodigo = new System.Windows.Forms.Label();
             this.mrcNuevoElemento = new System.Windows.Forms.GroupBox();
             this.tvArbol = new System.Windows.Forms.TreeView();
-            this.btnExportar = new System.Windows.Forms.Button();
+            this.btnEquilibrar = new System.Windows.Forms.Button();
             this.mrcEliminar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArbol)).BeginInit();
             this.mrcListado.SuspendLayout();
@@ -90,13 +91,14 @@
             this.btnEliminar.TabIndex = 13;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(13, 33);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
+            this.label3.Size = new System.Drawing.Size(46, 15);
             this.label3.TabIndex = 7;
             this.label3.Text = "Codigo";
             // 
@@ -136,6 +138,7 @@
             // 
             // mrcListado
             // 
+            this.mrcListado.Controls.Add(this.btnEquilibrar);
             this.mrcListado.Controls.Add(this.btnExportar);
             this.mrcListado.Controls.Add(this.optPostOrden);
             this.mrcListado.Controls.Add(this.optPreOrden);
@@ -143,17 +146,27 @@
             this.mrcListado.Controls.Add(this.dgvArbol);
             this.mrcListado.Location = new System.Drawing.Point(22, 267);
             this.mrcListado.Name = "mrcListado";
-            this.mrcListado.Size = new System.Drawing.Size(727, 293);
+            this.mrcListado.Size = new System.Drawing.Size(727, 343);
             this.mrcListado.TabIndex = 21;
             this.mrcListado.TabStop = false;
             this.mrcListado.Text = "Listado de árbol";
+            // 
+            // btnExportar
+            // 
+            this.btnExportar.Location = new System.Drawing.Point(25, 245);
+            this.btnExportar.Name = "btnExportar";
+            this.btnExportar.Size = new System.Drawing.Size(100, 22);
+            this.btnExportar.TabIndex = 7;
+            this.btnExportar.Text = "Exportar";
+            this.btnExportar.UseVisualStyleBackColor = true;
+            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
             // 
             // optPostOrden
             // 
             this.optPostOrden.AutoSize = true;
             this.optPostOrden.Location = new System.Drawing.Point(25, 207);
             this.optPostOrden.Name = "optPostOrden";
-            this.optPostOrden.Size = new System.Drawing.Size(78, 17);
+            this.optPostOrden.Size = new System.Drawing.Size(90, 19);
             this.optPostOrden.TabIndex = 8;
             this.optPostOrden.TabStop = true;
             this.optPostOrden.Text = "Post-Orden";
@@ -165,7 +178,7 @@
             this.optPreOrden.AutoSize = true;
             this.optPreOrden.Location = new System.Drawing.Point(25, 143);
             this.optPreOrden.Name = "optPreOrden";
-            this.optPreOrden.Size = new System.Drawing.Size(73, 17);
+            this.optPreOrden.Size = new System.Drawing.Size(85, 19);
             this.optPreOrden.TabIndex = 7;
             this.optPreOrden.TabStop = true;
             this.optPreOrden.Text = "Pre-Orden";
@@ -177,7 +190,7 @@
             this.optInOrden.AutoSize = true;
             this.optInOrden.Location = new System.Drawing.Point(25, 83);
             this.optInOrden.Name = "optInOrden";
-            this.optInOrden.Size = new System.Drawing.Size(66, 17);
+            this.optInOrden.Size = new System.Drawing.Size(76, 19);
             this.optInOrden.TabIndex = 6;
             this.optInOrden.TabStop = true;
             this.optInOrden.Text = "In-Orden";
@@ -240,7 +253,7 @@
             this.lblTrámite.AutoSize = true;
             this.lblTrámite.Location = new System.Drawing.Point(22, 119);
             this.lblTrámite.Name = "lblTrámite";
-            this.lblTrámite.Size = new System.Drawing.Size(42, 13);
+            this.lblTrámite.Size = new System.Drawing.Size(49, 15);
             this.lblTrámite.TabIndex = 4;
             this.lblTrámite.Text = "Tramite";
             // 
@@ -256,7 +269,7 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Location = new System.Drawing.Point(21, 84);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(44, 13);
+            this.lblNombre.Size = new System.Drawing.Size(52, 15);
             this.lblNombre.TabIndex = 2;
             this.lblNombre.Text = "Nombre";
             // 
@@ -272,7 +285,7 @@
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Location = new System.Drawing.Point(21, 48);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(40, 13);
+            this.lblCodigo.Size = new System.Drawing.Size(46, 15);
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Codigo";
             // 
@@ -299,20 +312,21 @@
             this.tvArbol.Size = new System.Drawing.Size(209, 229);
             this.tvArbol.TabIndex = 23;
             // 
-            // btnExportar
+            // btnEquilibrar
             // 
-            this.btnExportar.Location = new System.Drawing.Point(25, 245);
-            this.btnExportar.Name = "btnExportar";
-            this.btnExportar.Size = new System.Drawing.Size(100, 22);
-            this.btnExportar.TabIndex = 7;
-            this.btnExportar.Text = "Exportar";
-            this.btnExportar.UseVisualStyleBackColor = true;
+            this.btnEquilibrar.Location = new System.Drawing.Point(25, 283);
+            this.btnEquilibrar.Name = "btnEquilibrar";
+            this.btnEquilibrar.Size = new System.Drawing.Size(100, 22);
+            this.btnEquilibrar.TabIndex = 9;
+            this.btnEquilibrar.Text = "Equilibrar";
+            this.btnEquilibrar.UseVisualStyleBackColor = true;
+            this.btnEquilibrar.Click += new System.EventHandler(this.btnEquilibrar_Click);
             // 
             // frmArbolBinario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 584);
+            this.ClientSize = new System.Drawing.Size(760, 636);
             this.Controls.Add(this.tvArbol);
             this.Controls.Add(this.mrcEliminar);
             this.Controls.Add(this.mrcListado);
@@ -321,6 +335,7 @@
             this.Name = "frmArbolBinario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructuras Ramificadas - Arbol binario";
+            this.Load += new System.EventHandler(this.frmArbolBinario_Load);
             this.mrcEliminar.ResumeLayout(false);
             this.mrcEliminar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArbol)).EndInit();
@@ -361,5 +376,6 @@
         private System.Windows.Forms.GroupBox mrcNuevoElemento;
         private System.Windows.Forms.TreeView tvArbol;
         private System.Windows.Forms.Button btnExportar;
+        private System.Windows.Forms.Button btnEquilibrar;
     }
 }
