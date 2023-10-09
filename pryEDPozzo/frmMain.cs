@@ -52,5 +52,17 @@ namespace pryEDPozzo
             frmArbolBinario vArbol = new frmArbolBinario();
             vArbol.ShowDialog();
         }
+
+        private void operacionesConTablasDeBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBaseDatos vBaseDatos = new frmBaseDatos();
+            vBaseDatos.ShowDialog();
+        }
+
+        private void consultaEnLaBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaBaseDatos vConsultaBaseDatos = new frmConsultaBaseDatos();
+            vConsultaBaseDatos.ShowDialog();
+        }
     }
 }
