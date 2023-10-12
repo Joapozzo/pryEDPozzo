@@ -64,5 +64,11 @@ namespace pryEDPozzo
             frmConsultaBaseDatos vConsultaBaseDatos = new frmConsultaBaseDatos();
             vConsultaBaseDatos.ShowDialog();
         }
+
+        private void repasoDeOperacionesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmOperacionesRepaso frmOperacionesRepaso = new frmOperacionesRepaso();
+            frmOperacionesRepaso.ShowDialog();
+        }
     }
 }

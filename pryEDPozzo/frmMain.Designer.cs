@@ -187,6 +187,7 @@
             this.repasoDeOperacionesToolStripMenuItem1.Name = "repasoDeOperacionesToolStripMenuItem1";
             this.repasoDeOperacionesToolStripMenuItem1.Size = new System.Drawing.Size(297, 22);
             this.repasoDeOperacionesToolStripMenuItem1.Text = "Repaso de Operaciones...";
+            this.repasoDeOperacionesToolStripMenuItem1.Click += new System.EventHandler(this.repasoDeOperacionesToolStripMenuItem1_Click);
             // 
             // frmPrincipal
             // 
