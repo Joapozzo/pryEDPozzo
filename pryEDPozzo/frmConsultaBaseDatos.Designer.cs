@@ -81,7 +81,8 @@
             this.Controls.Add(this.txtInstruccion);
             this.Controls.Add(this.lblTitulo);
             this.Name = "frmConsultaBaseDatos";
-            this.Text = "frmConsultaBaseDatos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Consulta a Base de Datos";
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -30,9 +30,9 @@
         {
             this.dgvBaseDatos = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnSimple = new System.Windows.Forms.Button();
-            this.btnMulti = new System.Windows.Forms.Button();
             this.btnJuntar = new System.Windows.Forms.Button();
+            this.btnMulti = new System.Windows.Forms.Button();
+            this.btnSimple = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnConvulcion = new System.Windows.Forms.Button();
             this.btnSeleccionMulti = new System.Windows.Forms.Button();
@@ -67,15 +67,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Operaciones de Proyeccion - SELECT";
             // 
-            // btnSimple
+            // btnJuntar
             // 
-            this.btnSimple.Location = new System.Drawing.Point(6, 28);
-            this.btnSimple.Name = "btnSimple";
-            this.btnSimple.Size = new System.Drawing.Size(217, 23);
-            this.btnSimple.TabIndex = 0;
-            this.btnSimple.Text = "Proyeccion simple";
-            this.btnSimple.UseVisualStyleBackColor = true;
-            this.btnSimple.Click += new System.EventHandler(this.btnSimple_Click);
+            this.btnJuntar.Location = new System.Drawing.Point(6, 96);
+            this.btnJuntar.Name = "btnJuntar";
+            this.btnJuntar.Size = new System.Drawing.Size(217, 23);
+            this.btnJuntar.TabIndex = 2;
+            this.btnJuntar.Text = "Juntar";
+            this.btnJuntar.UseVisualStyleBackColor = true;
+            this.btnJuntar.Click += new System.EventHandler(this.btnJuntar_Click);
             // 
             // btnMulti
             // 
@@ -87,14 +87,15 @@
             this.btnMulti.UseVisualStyleBackColor = true;
             this.btnMulti.Click += new System.EventHandler(this.btnMulti_Click);
             // 
-            // btnJuntar
+            // btnSimple
             // 
-            this.btnJuntar.Location = new System.Drawing.Point(6, 96);
-            this.btnJuntar.Name = "btnJuntar";
-            this.btnJuntar.Size = new System.Drawing.Size(217, 23);
-            this.btnJuntar.TabIndex = 2;
-            this.btnJuntar.Text = "Juntar";
-            this.btnJuntar.UseVisualStyleBackColor = true;
+            this.btnSimple.Location = new System.Drawing.Point(6, 28);
+            this.btnSimple.Name = "btnSimple";
+            this.btnSimple.Size = new System.Drawing.Size(217, 23);
+            this.btnSimple.TabIndex = 0;
+            this.btnSimple.Text = "Proyeccion simple";
+            this.btnSimple.UseVisualStyleBackColor = true;
+            this.btnSimple.Click += new System.EventHandler(this.btnSimple_Click);
             // 
             // groupBox2
             // 
@@ -116,6 +117,7 @@
             this.btnConvulcion.TabIndex = 2;
             this.btnConvulcion.Text = "Seleccion por convulcion";
             this.btnConvulcion.UseVisualStyleBackColor = true;
+            this.btnConvulcion.Click += new System.EventHandler(this.btnConvulcion_Click);
             // 
             // btnSeleccionMulti
             // 
@@ -125,6 +127,7 @@
             this.btnSeleccionMulti.TabIndex = 1;
             this.btnSeleccionMulti.Text = "Seleccion multiabritubo";
             this.btnSeleccionMulti.UseVisualStyleBackColor = true;
+            this.btnSeleccionMulti.Click += new System.EventHandler(this.btnSeleccionMulti_Click);
             // 
             // btnSeleccionSimple
             // 

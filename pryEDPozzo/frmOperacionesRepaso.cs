@@ -43,6 +43,15 @@ namespace pryEDPozzo
                         "UNION " +
                         "SELECT * FROM LIBRO WHERE PRECIO < 600";
                     break;
+                case 3:
+                    varSQL = "SELECT Titulo, Nombre FROM libro, Pais  Where Libro.idlibro = Pais.IdPais ";
+                    break;
+                case 4:
+                    varSQL = "SELECT TITULO FROM LIBRO ORDER BY 1 DESC";
+                    break;
+                case 5:
+                    varSQL = "SELECT IDLIBRO,TITULO FROM LIBRO ORDER BY 1 DESC";
+                    break;
 
             }
 

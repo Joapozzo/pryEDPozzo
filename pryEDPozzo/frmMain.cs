@@ -70,5 +70,10 @@ namespace pryEDPozzo
             frmOperacionesRepaso frmOperacionesRepaso = new frmOperacionesRepaso();
             frmOperacionesRepaso.ShowDialog();
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           this.Close();
+        }
     }
 }
